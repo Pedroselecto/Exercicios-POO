@@ -1,3 +1,8 @@
+import model.Aluno;
+import model.Monitor;
+import model.Pessoa;
+import model.Professor;
+
 public class Programa {
 
     public static void main(String[] args) {
@@ -10,22 +15,24 @@ public class Programa {
 
         System.out.println("----------------------------------");
 
-        Aluno aluno1 = new Aluno();
-        aluno1.nome = "Maria";
-        aluno1.telefone = "126534";
-        System.out.println("Telefone aluno: " + aluno1.telefone);
-        aluno1.mudarTelefone("21555699871");
-        System.out.println("Telefone aluno: " + aluno1.telefone);
+        Pessoa pessoa2 = new Pessoa("Pedro", "999981199");
+        System.out.println("Nome pessoa2: " + pessoa2.nome);
+        pessoa1.mudarTelefone("0987102932");
+        System.out.println("Telefone pessoa2: " + pessoa2.telefone);
 
         System.out.println("----------------------------------");
 
-        Professor professor1 = new Professor();
-        professor1.nome = "Thiago";
-        professor1.telefone = "218030593";
-        professor1.titulacao = "POO";
-        System.out.println("Titulacao do professor: " + professor1.titulacao);
-        professor1.mudarTitulacao("Coordenador Tech");
-        System.out.println("Titulacao do professor: " + professor1.titulacao);
+        Professor professor2 = new Professor("Rafael", "12345678", "Padrões de projeto de Software");
+        System.out.println("Nome do professor:" + professor2.nome);
+        System.out.println("Telefone do professor:" + professor2.telefone);
+        System.out.println("Titulação do professor:" + professor2.titulacao);
+
+        System.out.println("----------------------------------");
+
+        Aluno aluno2 = new Aluno("Geraldo", "29380928390", "20232029392");
+        System.out.println("Nome do aluno:" + aluno2.nome);
+        System.out.println("Telefone do aluno:" + aluno2.telefone);
+        System.out.println("Matricula do aluno:" + aluno2.matricula);
 
         System.out.println("----------------------------------");
 
