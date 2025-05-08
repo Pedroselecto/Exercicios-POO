@@ -1,0 +1,12 @@
+## Modificadores de visibilidade
+
+### Tipos de modificadores
+
+- Public: A propriedade pode ser acessada por objetos de quaisquer classes do mesmo projeto;
+- Private: A propriedade pode ser acessada por objetos da mesma classe;
+- “Package”: É um default, um padrão para quando você não especifica nenhum modificador de visibilidade. Apenas classes de um mesmo pacote podem interagir com a propriedade;
+- Protected: A propriedade pode ser acessada por classes do mesmo pacote ou por suas superclasses desde que a propriedade tenha sido declarada na própria superclasse.
+
+### Observações
+
+- A visibilidade de uma propriedade interfere na herança.
